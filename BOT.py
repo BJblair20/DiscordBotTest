@@ -14,6 +14,8 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 
 
+client = discord.Client()
+client = commands.Bot(command_prefix = '!') #set command prefix
 
 @client.event
 async def on_ready():
